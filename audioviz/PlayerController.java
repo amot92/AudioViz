@@ -117,9 +117,9 @@ public class PlayerController implements Initializable {
         });
         
         timeSlider.setOnMouseReleased((javafx.scene.input.MouseEvent event) -> {
-            sliderIsClicked = false;
             Duration duration = Duration.millis(timeSlider.getValue());
             mediaPlayer.seek(duration);
+            sliderIsClicked = false;
         });
     }
     
